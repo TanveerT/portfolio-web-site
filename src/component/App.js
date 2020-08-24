@@ -1,4 +1,6 @@
 import React from "react";
+
+import Header from "./Header";
 import logo from "../images/logo.svg";
 import "../css/App.css";
 
