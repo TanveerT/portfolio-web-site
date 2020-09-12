@@ -1,0 +1,38 @@
+.sidedrawer {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}
+.sidedrawer.open {
+  transform: translateX(0%);
+  transition: transform 1s ease-out;
+}
+
+.sidedrawer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ul-item {
+  box-sizing: border-box;
+  color: black;
+  padding: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .sidedrawer {
+    width: 45%;
+  }
+}

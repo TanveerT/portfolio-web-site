@@ -6,6 +6,8 @@ a {
 
 .header {
   height: 100vh;
+
+  max-height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -20,11 +22,25 @@ a {
   width: 50%;
 }
 .header-photo {
-  width: 70%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   display: block;
+
+  transition: 1s ease-in;
 }
+.img-skeleton {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 70%;
+  min-height: 400px;
+  height: 100%;
+  background: white;
+  border-radius: 16px;
+}
+
 .header-text {
   display: flex;
   flex-direction: column;
@@ -33,7 +49,7 @@ a {
 .header-text h1 {
   width: 50%;
   color: white;
-  font-size: 30px;
+  font-size: 1.8rem;
   text-align: left;
 }
 
@@ -45,7 +61,7 @@ a {
 .name {
   color: #ed5565;
   margin-left: 2px;
-  font-size: 45px;
+  font-size: 2.2rem;
 }
 .f {
   margin-left: 7px;
@@ -69,11 +85,12 @@ a {
   cursor: pointer;
   background-color: #ffff99;
   border-radius: 25px;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-left: 20px;
   padding: 5px;
   width: 120px;
+  color: black;
 }
 .list-item > a {
   color: black;
@@ -99,10 +116,10 @@ a {
     padding-top: 10px;
     text-align: center;
     width: 100%;
-    font-size: 18px;
+    font-size: 1.5rem;
   }
   .name {
-    font-size: 20px;
+    font-size: 1.8rem;
   }
   .header-links {
     margin-top: 10px;
@@ -114,7 +131,10 @@ a {
   .list-item {
     margin-left: px;
     margin-top: 5px;
-    font-size: 16px;
+    /* font-size: 16px; */
+  }
+  .img-skeleton {
+    min-height: 200px;
   }
 }
 /* end media queries */

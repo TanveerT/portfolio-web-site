@@ -1,0 +1,28 @@
+.toggle-button {
+  border: none;
+  background-color: transparent;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  height: 20px;
+  width: 30px;
+  margin-left: 1rem;
+}
+.toggle-button:focus {
+  outline: none;
+}
+
+.button-line {
+  background-color: black;
+  width: 25px;
+  height: 2px;
+}
+
+@media only screen and (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+}
