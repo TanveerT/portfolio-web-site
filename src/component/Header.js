@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import photo from "../images/EDIT-min.jpg";

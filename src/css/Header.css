@@ -25,22 +25,24 @@ a {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 25px;
   display: block;
-
   transition: 1s ease-in;
 }
 .img-skeleton {
   margin-left: auto;
   margin-right: auto;
-
   width: 70%;
-  min-height: 400px;
+
+  min-height: 350px;
   height: 100%;
   background: white;
   border-radius: 16px;
 }
-
+.img-skeleton > img {
+  object-fit: contain;
+  max-height: 400px;
+}
 .header-text {
   display: flex;
   flex-direction: column;
